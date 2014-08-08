@@ -21,6 +21,8 @@
 		BB39DDBD19956F31003336A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB39DD9F19956F31003336A0 /* UIKit.framework */; };
 		BB39DDC519956F31003336A0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB39DDC319956F31003336A0 /* InfoPlist.strings */; };
 		BB39DDC719956F31003336A0 /* GallaryShowCaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB39DDC619956F31003336A0 /* GallaryShowCaseTests.m */; };
+		BB39DDD119956FDD003336A0 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB39DDD019956FDD003336A0 /* AssetsLibrary.framework */; };
+		BB39DDD419958A11003336A0 /* JRPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB39DDD319958A11003336A0 /* JRPhotoCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		BB39DDC219956F31003336A0 /* GallaryShowCaseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GallaryShowCaseTests-Info.plist"; sourceTree = "<group>"; };
 		BB39DDC419956F31003336A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BB39DDC619956F31003336A0 /* GallaryShowCaseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GallaryShowCaseTests.m; sourceTree = "<group>"; };
+		BB39DDD019956FDD003336A0 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		BB39DDD219958A11003336A0 /* JRPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRPhotoCell.h; sourceTree = "<group>"; };
+		BB39DDD319958A11003336A0 /* JRPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRPhotoCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB39DDD119956FDD003336A0 /* AssetsLibrary.framework in Frameworks */,
 				BB39DD9E19956F31003336A0 /* CoreGraphics.framework in Frameworks */,
 				BB39DDA019956F31003336A0 /* UIKit.framework in Frameworks */,
 				BB39DD9C19956F31003336A0 /* Foundation.framework in Frameworks */,
@@ -101,6 +107,7 @@
 		BB39DD9A19956F31003336A0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BB39DDD019956FDD003336A0 /* AssetsLibrary.framework */,
 				BB39DD9B19956F31003336A0 /* Foundation.framework */,
 				BB39DD9D19956F31003336A0 /* CoreGraphics.framework */,
 				BB39DD9F19956F31003336A0 /* UIKit.framework */,
@@ -112,9 +119,9 @@
 		BB39DDA119956F31003336A0 /* GallaryShowCase */ = {
 			isa = PBXGroup;
 			children = (
-				BB39DDAA19956F31003336A0 /* JRAppDelegate.h */,
-				BB39DDAB19956F31003336A0 /* JRAppDelegate.m */,
 				BB39DDAD19956F31003336A0 /* Main.storyboard */,
+				BB39DDD219958A11003336A0 /* JRPhotoCell.h */,
+				BB39DDD319958A11003336A0 /* JRPhotoCell.m */,
 				BB39DDB019956F31003336A0 /* JRViewController.h */,
 				BB39DDB119956F31003336A0 /* JRViewController.m */,
 				BB39DDB319956F31003336A0 /* Images.xcassets */,
@@ -126,6 +133,8 @@
 		BB39DDA219956F31003336A0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BB39DDAA19956F31003336A0 /* JRAppDelegate.h */,
+				BB39DDAB19956F31003336A0 /* JRAppDelegate.m */,
 				BB39DDA319956F31003336A0 /* GallaryShowCase-Info.plist */,
 				BB39DDA419956F31003336A0 /* InfoPlist.strings */,
 				BB39DDA719956F31003336A0 /* main.m */,
@@ -252,6 +261,7 @@
 			files = (
 				BB39DDAC19956F31003336A0 /* JRAppDelegate.m in Sources */,
 				BB39DDB219956F31003336A0 /* JRViewController.m in Sources */,
+				BB39DDD419958A11003336A0 /* JRPhotoCell.m in Sources */,
 				BB39DDA819956F31003336A0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

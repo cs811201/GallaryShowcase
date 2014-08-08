@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JRViewController : UIViewController
+@interface JRViewController : UIViewController <UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
+
 
 @end
