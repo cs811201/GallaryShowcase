@@ -8,6 +8,7 @@
 
 #import "JRViewController.h"
 #import <AssetsLibrary/AssetsLibrary.h>
+#import "JRPhotoCell.h"
 
 @interface JRViewController ()
 
@@ -82,8 +83,9 @@
 // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewCell * cell =(UICollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"PhotoCell" forIndexPath:indexPath];
-    ALAsset *assets = self.assets[indexPath.row];
+    JRPhotoCell   * cell =(JRPhotoCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"PhotoCell" forIndexPath:indexPath];
+    ALAsset *asset = self.assets[indexPath.row];
+    cell.asset = asset;
     cell.backgroundColor=[UIColor greenColor];
     
     return cell;

@@ -8,6 +8,11 @@
 
 #import "JRPhotoCell.h"
 
+@interface JRPhotoCell()
+@property  (nonatomic,weak) IBOutlet   UIImageView *photoImageView;
+
+@end
+
 @implementation JRPhotoCell
 
 - (id)initWithFrame:(CGRect)frame
@@ -17,6 +22,11 @@
         // Initialization code
     }
     return self;
+}
+
+- (void) setAsset:(ALAsset *)asset{
+    _asset= asset;
+    self.photoImageView.image=[UIImage imageWithCGImage:[asset thumbnail]];
 }
 
 /*

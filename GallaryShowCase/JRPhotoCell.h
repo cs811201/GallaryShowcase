@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AssetsLibrary/AssetsLibrary.h>
 
 @interface JRPhotoCell : UICollectionViewCell
-
+@property (nonatomic,strong) ALAsset *asset;
 @end
